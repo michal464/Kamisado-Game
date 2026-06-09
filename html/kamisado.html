@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/kamisado.css">
+    <link rel="icon" type="image/x-icon" href="../images/icon.webp">
+    <title>Kamisado</title>
+</head>
+
+<body class="background">
+    <audio id="victoryMusic" src="../music/winner.mp3" preload="auto"></audio>
+    <div id="sidebar">
+        <div id="profiles">
+            <div id="player2-profile">
+                <img src="../images/white.webp" alt="Player 2 Icon" class="player-icon">
+                <p><span id="player2-name"></span></p>
+            </div>
+            <div id="player1-profile">
+                <img src="../images/black.webp" alt="Player 1 Icon" class="player-icon">
+                <p><span id="player1-name"></span></p>
+            </div>
+        </div>
+
+        <div id="buttons">
+            <button id="restartButton">Restart game</button>
+            <button id="all-games-button">All the games</button>
+            <button id="logout-btn" onclick="SignOutPlayer()">Sign Out</button>
+        </div>
+    </div>
+
+
+    <div id="circle"></div>
+    <div class="container">
+        <div id="game-board"></div>
+    </div>
+    <script src="../js/kamisado.js"></script>
+</body>
+
+</html>

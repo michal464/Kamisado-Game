@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/instruction.css">
+    <link rel="icon" type="image/x-icon" href="../images/icon.webp">
+    <title>instructions</title>
+</head>
+
+<body>
+    <div class="instructions-frame" id="instructions-frame">
+        <div class="container-en">
+            <h1>Game Instructions: Kamisado</h1>
+            <h2>Gameplay:</h2>
+            <ul>
+                <li>The game begins when the black player is randomly selected by the computer.</li>
+                <li>The game is played on an 8x8 board, with each player starting with 8 soldiers of different
+                    colors:
+                    <ul>
+                        <li>The white soldiers are placed on row 8 (the bottom row).</li>
+                        <li>The black soldiers are placed on row 1 (the top row).</li>
+                    </ul>
+                </li>
+            </ul>
+            <h2>Turn Mechanics:</h2>
+            <ol>
+                <li><strong>Game Start:</strong> The black player starts the game by moving any soldier to a square
+                    according to the rules.</li>
+                <li><strong>Turn Transition:</strong>
+                    <ul>
+                        <li>If the black player’s move is legal, the turn passes to the white player.</li>
+                        <li>The white player can only move the soldier whose color matches the color of the square
+                            where the black player’s soldier stopped.</li>
+                    </ul>
+                    <p><em>Example:</em> If the black player stops on an orange square, the white player can only
+                        move the orange soldier.</p>
+                </li>
+            </ol>
+            <h2>Movement Rules:</h2>
+            <ul>
+                <li><strong>Direction:</strong> Soldiers can move forward, diagonally to the right, or diagonally to
+                    the left.</li>
+                <li><strong>Restrictions:</strong>
+                    <ul>
+                        <li>Soldiers cannot move backward.</li>
+                        <li>Soldiers cannot jump over other soldiers.</li>
+                    </ul>
+                </li>
+                <li><strong>Step Limit:</strong> There is no limit to the number of steps a soldier can take in one
+                    turn, as long as the move is legal.</li>
+            </ul>
+
+            <h2>Making a Move:</h2>
+            <p>To move a soldier, click on the square to which you want to move the soldier. Do not click directly
+                on the soldier.</p>
+
+            <h2>Objective:</h2>
+            <p>The goal is to move one soldier to the opponent’s home row. The first player to move a soldier to the
+                opponent’s home row wins the game.</p>
+            <div class="button-container">
+                <a href="../html/games.html">
+                    <button><a href="../html/kamisado.html">Start Game</a></button>
+                </a>
+                <button onclick="showHebrew()">עברית</button>
+            </div>
+        </div>
+    </div>
+    <div class="hebrewInstructions hide" id="hebrewInstructions">
+        <div class="container-he">
+            <h1>הוראות משחק: קמיסדו</h1>
+
+            <h2>מהלך המשחק:</h2>
+            <ul>
+                <li>המשחק מתחיל בבחירה אקראית של השחקן השחור על ידי המחשב.</li>
+                <li>המשחק מתנהל על לוח 8x8, כאשר לכל שחקן יש 8 חיילים בצבעים שונים:
+                    <ul>
+                        <li>החיילים הלבנים ממוקמים בשורה 8 (השורה התחתונה).</li>
+                        <li>החיילים השחורים ממוקמים בשורה 1 (השורה העליונה).</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>מהלך התור:</h2>
+            <ol>
+                <li><strong>פתיחת המשחק:</strong> השחקן השחור מתחיל ומזיז חייל כלשהו לפי הכללים.</li>
+                <li><strong>מעבר תור:</strong>
+                    <ul>
+                        <li>אם הצעד של השחקן השחור היה חוקי, התור עובר לשחקן הלבן.</li>
+                        <li>השחקן הלבן יכול להזיז רק את החייל שצבעו תואם לצבע המשבצת שעליה נעצר החייל של השחקן
+                            השחור.
+                        </li>
+                    </ul>
+                    <p><em>לדוגמה:</em> אם השחקן השחור נעצר על משבצת כתומה, השחקן הלבן יכול להזיז רק את החייל הכתום.
+                    </p>
+                </li>
+            </ol>
+
+            <h2>כללי התנועה של החיילים:</h2>
+            <ul>
+                <li><strong>כיוון התנועה:</strong> כל חייל יכול לנוע קדימה, באלכסון ימינה, או באלכסון שמאלה.</li>
+                <li><strong>איסורים:</strong>
+                    <ul>
+                        <li>אסור לנוע לאחור.</li>
+                        <li>אסור לדלג מעל חיילים אחרים.</li>
+                    </ul>
+                </li>
+                <li><strong>אורך התנועה:</strong> אין הגבלה על מספר הצעדים שחייל יכול לבצע בתור אחד, כל עוד הצעד
+                    חוקי.
+                </li>
+            </ul>
+
+            <h2>ביצוע מהלך:</h2>
+            <p>כדי להזיז חייל, יש ללחוץ על המשבצת שאליה רוצים להזיז אותו. אין ללחוץ על החייל עצמו.</p>
+
+            <h2>מטרת המשחק:</h2>
+            <p>המטרה היא להזיז חייל אחד לשורת הבית של היריב. השחקן הראשון שמצליח להעביר חייל לשורת הבית של היריב
+                מנצח
+                במשחק.</p>
+        </div>
+        <div class="button-container">
+            <a href="../html/games.html">
+                <button><a href="../html/kamisado.html">התחל לשחק</a></button>
+            </a>
+            <button onclick="showEnglish()">English</button>
+        </div>
+    </div>
+    <script src="../js/instructions.js"></script>
+</body>
+
+</html>

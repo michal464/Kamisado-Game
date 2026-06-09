@@ -1,0 +1,34 @@
+html, body {
+    background-image: url('../images/building.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 150px;
+}
+
+.go-back {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 5px solid black;
+}
+.go-back:hover {
+    background-color: #0056b3;
+}
+.go-back a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
